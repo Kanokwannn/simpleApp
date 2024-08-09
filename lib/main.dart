@@ -97,7 +97,7 @@ class MyHomePage extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Text(
-              'Achievement:',
+              'Achievements:',
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
