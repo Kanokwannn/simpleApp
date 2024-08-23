@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:simpleapp/screens/menus.dart'; // Ensure this path is correct
-
+import 'package:simpleapp/screens/menus.dart';
+import 'package:simpleapp/screens/home.dart'; 
 void main() {
   runApp(
     const MaterialApp(
       title: "Simple App",
-      home: MyHomePage(), // Define MyHomePage widget for better organization
+      home: MyHomePage(),
     ),
   );
 }
@@ -19,7 +19,32 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Simple App"),
       ),
-      body: const Menus(), // Ensure Menus is a const constructor if possible
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Menus()),
+                );
+              },
+              child: const Text('Go to Menus'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Home()), 
+                );
+              },
+              child: const Text('Go to Home'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

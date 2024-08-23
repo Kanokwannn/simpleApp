@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class MyWidget extends StatelessWidget {
             FilledButton(
               style: FilledButton.styleFrom(
                 backgroundColor: Colors.amber.shade100,
-                foregroundColor: Colors.brown, // Correct property
+                foregroundColor: Colors.brown,
               ),
               onPressed: () {
                 print("Filled Button Pressed");
@@ -42,7 +42,7 @@ class MyWidget extends StatelessWidget {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.amber
+                backgroundColor: Colors.amber,
               ),
               onPressed: () {
                 print("Elevated Button Pressed");
@@ -50,6 +50,9 @@ class MyWidget extends StatelessWidget {
               child: const Text("Elevated"),
             ),
             OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                backgroundColor: Colors.red, // Border color instead of background color
+              ),
               onPressed: () {
                 print("Outlined Button Pressed");
               },
