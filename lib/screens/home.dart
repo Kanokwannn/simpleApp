@@ -56,8 +56,11 @@ class Home extends StatelessWidget {
             ),
             OutlinedButton(
               style: OutlinedButton.styleFrom(
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.white, 
+                side: const BorderSide(
+                  color: Colors.red,
+                  width: 2
+                  ),
+                foregroundColor: Colors.blue, 
               ),
               onPressed: () {
                 print("Outlined Button Pressed");
