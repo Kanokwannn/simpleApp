@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
                 print("Text Button Pressed");
               },
               child: const Text(
-                "Text",
+                "Home",
                 style: TextStyle(
                   color: Colors.deepPurple,
                   fontSize: 20,
@@ -43,20 +43,30 @@ class Home extends StatelessWidget {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.amber,
+                foregroundColor: Colors.black,
               ),
               onPressed: () {
                 print("Elevated Button Pressed");
               },
-              child: const Text("Elevated"),
+              child: const Text("Elevated",
+                style: TextStyle(
+                    fontSize: 20,
+                ),
+              ),
             ),
             OutlinedButton(
               style: OutlinedButton.styleFrom(
-                backgroundColor: Colors.red, // Border color instead of background color
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white, 
               ),
               onPressed: () {
                 print("Outlined Button Pressed");
               },
-              child: const Text("Outline"),
+              child: const Text("Outline",
+                style: TextStyle(
+                      fontSize: 20,
+                  ),
+                ),
             ),
           ],
         ),

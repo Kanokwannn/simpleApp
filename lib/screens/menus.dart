@@ -8,7 +8,7 @@ class Menus extends StatefulWidget {
 }
 
 class _MenusState extends State<Menus> {
-  List<String> item = <String>['Item1'];
+  List<String> item = <String>['Item1','Item2','Item3','Item4'];
 
   @override
   Widget build(BuildContext context) {
