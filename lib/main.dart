@@ -23,7 +23,7 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(
+            OutlinedButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
               child: const Text('Go to Menus'),
             ),
             const SizedBox(height: 20),
-            ElevatedButton(
+            OutlinedButton(
               onPressed: () {
                 Navigator.push(
                   context,
