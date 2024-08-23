@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => const Menus()),
                 );
               },
-              child: const Text('Go to Menus'),
+              child: const Text('Menu'),
             ),
             const SizedBox(height: 20),
             OutlinedButton(
@@ -40,7 +40,7 @@ class MyHomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => const Home()), 
                 );
               },
-              child: const Text('Go to Home'),
+              child: const Text('Homie'),
             ),
           ],
         ),
